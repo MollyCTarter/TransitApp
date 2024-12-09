@@ -1,0 +1,26 @@
+body {
+    /* Background properties */
+    background-color: rgb(0, 200, 0);
+    background-image: URL(WMATAMap.jpg);
+    background-position: top right;
+    background-size: 45rem 60rem;
+    background-repeat: no-repeat;
+}
+form {
+    width: 50%;
+}
+input, textarea, select {
+    background-color: rgb(255, 229, 180);
+}
+table {
+    background-color: rgb(255, 229, 180);
+    text-align: right;
+}
+li {
+    font-size: larger;
+}
+img {
+    margin-left: 5rem;
+    margin-top: 1rem;
+    opacity: 40%;
+}
