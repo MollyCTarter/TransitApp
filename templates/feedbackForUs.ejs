@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
+	<title>Customer Feedback</title>
+	<title>Customer Feedback</title>
+	<link rel="stylesheet" href="/style.css"></link>
+	<link rel="icon" type="image/png" sizes="32x32" href="green-line.jpg">
+</head>
+<body>
+	<h1>Customer Feedback</h1>
+	<form action="https://transitapp.onrender.com/feedbackForUs" method="post">
+		<fieldset rows="5" cols="80">
+			<label><strong>Name: </strong><input type="text" name="name"/></label>
+			<label><strong>Email Address: </strong><input type="email" name="email"></label><br><br>
+			<label><strong>Feedback: </strong></label><br>
+			<label><textarea rows="5" cols="80" name="feedback"></textarea></label>
+		</fieldset><br>
+		<input type="reset"/>
+		<input type="submit" value="Submit Feedback" onclick="confirmation()"/>
+		<hr>
+		<a href="https://transitapp.onrender.com/">HOMEPAGE</a>
+	</form>
+	<script>
+		function confirmation() {
+			window.confirm("Is your feedback constructive?\n");
+		}
+	</script>
+	<img src="/WMATALogo.jpg" width="350rem" height="350rem"/>
+</body>
+</html>

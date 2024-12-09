@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
+	<title>Display Trains</title>
+	<title>Display Trains</title>
+	<link rel="stylesheet" href="/style.css"></link>
+	<link rel="icon" type="image/png" sizes="32x32" href="green-line.jpg">
+</head>
+<body>
+	<h1>Display Trains visiting this station</h1>
+	<form action="https://transitapp.onrender.com/displayTrains" method="post">
+		<label><strong>Station: </strong></label><br><br>
+		<select name="LocationName">
+			<%- items %>
+		</select>
+		<br><br>
+		<input type="submit" value="Submit Station Request"/>
+		<hr>
+		<a href="https://transitapp.onrender.com/">HOMEPAGE</a>
+		<img src="/WMATALogo.jpg" width="350rem" height="350rem"/>
+</body>
+</html>
