@@ -27,7 +27,7 @@ async function insertInformation(client, databaseAndCollection, newInformation) 
     await client.db(databaseAndCollection.db).collection(databaseAndCollection.collection).insertOne(newInformation);
 	return result;
 }
-/*class Shutdown {
+class Shutdown {
 	#message = "";
 	constructor(message) {
 		this.#message = message;
@@ -35,21 +35,21 @@ async function insertInformation(client, databaseAndCollection, newInformation) 
 	displayMessage() {
 		process.stdout.write(`${this.#message}`);
 	}
-}*/
-//const message = "Shutting down the server\n";
-//const shutDownMessage = new Shutdown(message);
+}
+const message = "Shutting down the server\n";
+const shutDownMessage = new Shutdown(message);
 process.stdin.setEncoding("utf8");
-/*if (process.argv.length != 3) {
+if (process.argv.length != 3) {
     process.stdout.write(`Usage ${path.basename(process.argv[1])} jsonFile`);
 	  process.stdout.write("\n");
     process.exit(1);
-}*/
-//const file = process.argv[1];
-//const fileName = path.parse(process.argv[1]).name;
-//process.stdout.write(`Web server started and running at http://localhost:${portNumber}\n`);
-//const prompt = `Stop to shutdown the server: `;
-//process.stdout.write(prompt);
-/*process.stdin.on("readable", function () {
+}
+const file = process.argv[1];
+const fileName = path.parse(process.argv[1]).name;
+process.stdout.write(`Web server started and running at http://localhost:${portNumber}\n`);
+const prompt = `Stop to shutdown the server: `;
+process.stdout.write(prompt);
+process.stdin.on("readable", function () {
 	const dataInput = process.stdin.read();
 	if (dataInput !== null) {
 	  const command = dataInput.trim();
@@ -64,7 +64,7 @@ process.stdin.setEncoding("utf8");
 	  }
 	  process.stdin.resume();
 	}
-  });*/
+  });
   	const portNumber = process.env.PORT || 4000;
   	app.get("/", (request, response) => {
 		const variables = {
