@@ -9,8 +9,12 @@ body {
 form {
     width: 50%;
 }
-input, textarea, select, table {
+input, textarea, select {
     background-color: rgb(255, 229, 180);
+}
+table {
+    background-color: rgb(255, 229, 180);
+    text-align: right;
 }
 li {
     font-size: larger;
