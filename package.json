@@ -19,7 +19,8 @@
     "jsdom": "^25.0.1",
     "node-fetch": "^3.3.2",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-scripts": "^5.0.1"
   },
   "devDependencies": {
     "react-scripts": "^5.0.1",
