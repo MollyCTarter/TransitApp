@@ -46,7 +46,7 @@ if (process.argv.length != 3) {
 }
 const file = process.argv[1];
 const fileName = path.parse(process.argv[1]).name;
-const portNumber = process.env.PORT || 4000;
+const portNumber = process.env.PORT || 10000;
 process.stdout.write(`Web server started and running at http://localhost:${portNumber}\n`);
 const prompt = `Stop to shutdown the server: `;
 process.stdout.write(prompt);
@@ -72,7 +72,7 @@ process.stdin.on("readable", function () {
 		};
 		response.render("index", variables);
 	});
-	app.listen(portNumber);
+	app.listen(portNumber, '0.0.0.0');
 	app.set("views", path.resolve(__dirname, "templates"));
 	app.set("view engine", "ejs");
 	app.use(bodyParser.urlencoded({extended:true}));
