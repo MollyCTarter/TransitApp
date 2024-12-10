@@ -4,6 +4,7 @@ const fs = require('fs');
 const path = require('path');
 const express = require("express");
 const app = express();
+const port = process.env.PORT || 4000;
 app.use(express.static('public'));
 app.use(express.static('FINAL_PROJECT'));
 const bodyParser = require("body-parser");
