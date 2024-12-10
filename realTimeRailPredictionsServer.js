@@ -7,7 +7,7 @@ const app = express();
 app.use(express.static('public'));
 app.use(express.static('FINAL_PROJECT'));
 const bodyParser = require("body-parser");
-//const axios = require('axios');
+const axios = require('axios');
 require("dotenv").config({ path: path.resolve(__dirname, 'credentialsDontPost/.env') })
 const uri =
 `mongodb+srv://${process.env.MONGO_DB_USERNAME}:${process.env.MONGO_DB_PASSWORD}@summercampapplication0.vsrxw.mongodb.net/?retryWrites=true&w=majority&appName=SummerCampApplication0`;
