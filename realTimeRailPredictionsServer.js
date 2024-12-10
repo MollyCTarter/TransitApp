@@ -4,7 +4,6 @@ const fs = require('fs');
 const path = require('path');
 const express = require("express");
 const app = express();
-const port = process.env.PORT || 4000;
 app.use(express.static('public'));
 app.use(express.static('FINAL_PROJECT'));
 const bodyParser = require("body-parser");
@@ -40,14 +39,14 @@ class Shutdown {
 const message = "Shutting down the server\n";
 const shutDownMessage = new Shutdown(message);
 process.stdin.setEncoding("utf8");
-if (process.argv.length != 3) {
+/*if (process.argv.length != 3) {
     process.stdout.write(`Usage ${path.basename(process.argv[1])} jsonFile`);
 	  process.stdout.write("\n");
     process.exit(1);
-}
+}*/
 const file = process.argv[1];
 const fileName = path.parse(process.argv[1]).name;
-const portNumber = parseInt(process.argv[2]);
+const portNumber = process.env.PORT || 4000;
 process.stdout.write(`Web server started and running at http://localhost:${portNumber}\n`);
 const prompt = `Stop to shutdown the server: `;
 process.stdout.write(prompt);
