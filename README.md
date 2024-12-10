@@ -5,7 +5,7 @@ Submitted by: Molly Tarter (directory id: mtarter)
             App Description: Allows users to find which trains are coming into any station in the WMATA train system, with  data about the train that may be relevant to customers, including if it is a 6 or 8 car train, the train's destination, which line(color) it is, and how many minutes away from the station it is.
             Customer's can input feedback about WMATA, which goes into MongoDB, they also have the ability to "clear" all the feedback they entered, which empties the collection in MongoDB.
             
-            YouTube Video Link: https://www.youtube.com/MyAmazingAPP
+            YouTube Video Link: https://youtu.be/vD8zh8YLNiI
             
             APIs: WMATA (Washington Metropolitan Area Transit Authority) Real-Time Rail Predictions API
             (https://api.wmata.com/StationPrediction.svc/json/GetPrediction/ALL?api_key=ef1e5a59812e4481b9fb6ae7ab523932)
