@@ -9,7 +9,7 @@
 </head>
 <body>
 	<h1>Customer Feedback</h1>
-	<form action="http://localhost:<%= portNumber %>/feedbackForUs" method="post">
+	<form action="https://transitapp.onrender.com/feedbackForUs" method="post">
 		<fieldset rows="5" cols="80">
 			<label><strong>Name: </strong><input type="text" name="name"/></label>
 			<label><strong>Email Address: </strong><input type="email" name="email"></label><br><br>
@@ -19,7 +19,7 @@
 		<input type="reset"/>
 		<input type="submit" value="Submit Feedback" onclick="confirmation()"/>
 		<hr>
-		<a href="http://localhost:<%= portNumber %>">HOMEPAGE</a>
+		<a href="https://transitapp.onrender.com/">HOMEPAGE</a>
 	</form>
 	<script>
 		function confirmation() {
