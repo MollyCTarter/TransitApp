@@ -7,7 +7,7 @@ const app = express();
 app.use(express.static('public'));
 app.use(express.static('FINAL_PROJECT'));
 const bodyParser = require("body-parser");
-const axios = require('axios');
+//const axios = require('axios');
 require("dotenv").config({ path: path.resolve(__dirname, 'credentialsDontPost/.env') })
 const uri =
 `mongodb+srv://${process.env.MONGO_DB_USERNAME}:${process.env.MONGO_DB_PASSWORD}@summercampapplication0.vsrxw.mongodb.net/?retryWrites=true&w=majority&appName=SummerCampApplication0`;
@@ -46,6 +46,7 @@ if (process.argv.length != 3) {
 }
 const file = process.argv[1];
 const fileName = path.parse(process.argv[1]).name;
+const portNumber = process.env.PORT || 4000;
 process.stdout.write(`Web server started and running at http://localhost:${portNumber}\n`);
 const prompt = `Stop to shutdown the server: `;
 process.stdout.write(prompt);
@@ -65,7 +66,6 @@ process.stdin.on("readable", function () {
 	  process.stdin.resume();
 	}
   });
-  	const portNumber = process.env.PORT || 4000;
   	app.get("/", (request, response) => {
 		const variables = {
 			portNumber: portNumber
