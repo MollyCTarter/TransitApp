@@ -1,0 +1,106 @@
+.scalable-image {
+    width: 10%;
+    height: auto;
+    max-width: 100%;
+}
+body {
+    /* Background properties */
+    background-color: rgb(0, 200, 0);
+    background-image: URL(WMATAMap.jpg);
+    background-position: top right;
+    background-size: 50vw 100vh;
+    background-repeat: no-repeat;
+}
+form {
+    width: 50%;
+}
+@media (max-width: 768px) {
+    form {
+        width: 50%;
+    }
+}
+input, textarea, select {
+    background-color: rgb(255, 229, 180);
+    padding: 0.5rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+table {
+    background-color: rgb(255, 229, 180);
+    text-align: right;
+    width: 50%;
+    table-layout: fixed;
+}
+@media (max-width: 768px) {
+    table, th, td {
+        background-color: rgb(255, 229, 180);
+        width: 50%;
+    }
+    th, td {
+        background-color: rgb(255, 229, 180);
+        text-align: right;
+        overflow-wrap: break-word;
+    }
+}
+h1, h2, div {
+    max-width: 50%;
+    overflow-wrap: break-word;
+}
+li {
+    max-width: 50%;
+    overflow-wrap: break-word;
+    margin-left: -2.5rem;
+    font-size: 1.2rem;
+}
+@media (max-width: 768px) {
+    li {
+        font-size: 1em;
+    }
+}
+.color {
+    display: inline;
+    background-color: rgb(248, 210, 252);
+    white-space: normal;
+    word-wrap: break-word;
+}
+img {
+    margin-left: 0rem;
+    margin-top: 1rem;
+    opacity: 40%;
+    max-width: 50%;
+    height: auto;
+}
+@media (max-width: 768px) {
+    img {
+        margin-left: 0rem;
+        opacity: 60%;
+    }
+}
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    form {
+        width: 50%;
+    }
+    table {
+        font-size: 14px;
+    }
+    li {
+        font-size: 1em;
+    }
+}
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+    form {
+        width: 50%;
+    }
+    table {
+        font-size: 12px;
+    }
+    li {
+        font-size: 0.9em;
+    }
+}

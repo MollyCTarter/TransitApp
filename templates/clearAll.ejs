@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
+	<title>Clear Feedback</title>
+	<title>Clear Feedback</title>
+	<link rel="stylesheet" href="/style.css"></link>
+	<link rel="icon" type="image/png" sizes="32x32" href="green-line.jpg">
+</head>
+<body>
+	<h1>Clear your WMATA feedback</h1>
+	<form action="https://transitapp.onrender.com/clearAll" method="post">
+		<input type="submit" value="Clear your WMATA Feedback" onclick="confirmation()"/>
+		<hr>
+		<a href="https://transitapp.onrender.com/">HOMEPAGE</a>
+	</form>
+	<script>
+		function confirmation() {
+			window.confirm("Are you sure you want to clear your submitted feedback?");
+		}
+	</script>
+	<img src="/WMATALogo.jpg" width="350rem" height="350rem"/>
+</body>
+</html>
